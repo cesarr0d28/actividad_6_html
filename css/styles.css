@@ -1,0 +1,55 @@
+body {
+    background-image: url('https://www.example.com/fondo-deportivo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-buttons .btn {
+    width: 250px;
+    height: 120px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.home-buttons .btn:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}

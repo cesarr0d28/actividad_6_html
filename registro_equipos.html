@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgitro de Equipos de Fútbol</title>
+    <!-- Agrega el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gestión de Partidos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partidos.html">Partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro_partidos.html">Registrar Partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro_equipos.html">Registrar Equipos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <h1 class="mb-4">Registro de Equipos</h1>
+
+        <!-- Formulario para agregar un equipo -->
+        <form id="agregarEquipoForm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del equipo</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" required>
+            </div>
+            <div class="mb-3">
+                <label for="escudoUrl" class="form-label">URL del escudo</label>
+                <input type="url" class="form-control" id="escudoUrl" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Equipo</button>
+        </form>
+
+        <div id="mensajeRegistro" style="display: none; color: green;">¡Equipo registrado con éxito!</div>
+
+
+    <!-- Agrega el JS de Bootstrap (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/registro_equipos.js"></script>
+</body>
+</html>
